@@ -10,7 +10,7 @@ func Cal() {
 
 	var choice int
 	for {
-		fmt.Print("\nEnter your choice : ")
+		fmt.Print("\nEnter your choice :")
 		fmt.Scanln(&choice)
 
 		if choice >= 1 && choice <= 4 {
