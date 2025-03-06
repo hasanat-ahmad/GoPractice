@@ -1,17 +1,10 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func main() {
-	var password string = "Hasahsahsahs"
-	LengthCheck(password)
-	ContainsUpperCase(password)
-	ConatainsLowerCase(password)
-	ContainSpecialChar(password)
+	var arr [5]int
 
-	if LengthCheck(password) && ContainsUpperCase(password) && ConatainsLowerCase(password) && ContainSpecialChar(password) {
-		fmt.Print("Strong password")
-	} else {
-		fmt.Println("Weak password")
-	}
+	InsertionInArray(arr[:], 5)
+
 }
