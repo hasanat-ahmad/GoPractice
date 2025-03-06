@@ -1,19 +1,37 @@
 package main
 
-// import "fmt"
+import "fmt"
 
-func InsertionInArray(arr[] int, number int){
+func InsertElement(arr []int, number int) {
 	for i := 0; i < len(arr); i++ {
-		if arr[i] == 0{
+		if arr[i] == 0 {
 			arr[i] = number
+			fmt.Println(number, "added to index", i)
+			break
 		}
 	}
 }
 
-func DeleteElementInArray(arr[] int, number int){
+func DeleteElement(arr []int, number int) {
+	for i := 0; i < len(arr); i++ {
+		if arr[i] == number {
+			arr[i] = 0
+			fmt.Println(number, "deleted from index", i)
+
+			break
+		}
+	}
+}
+
+func SearchElement(arr []int, number int) {
+	found := false
 	for i := 0; i < len(arr); i++ {
 		if (arr[i] == number){
-			arr[i] = 0
+			fmt.Println(number, "found at index", i)
+			found = true
 		}
+	}
+	if (!found){
+		fmt.Println(number, "not found")
 	}
 }
