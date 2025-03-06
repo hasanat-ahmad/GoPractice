@@ -10,6 +10,7 @@ func main() {
 	InsertElement(arr[:], 9)
 
 	FindingMaxInArray(arr[:])
+	FindingMinInArray(arr[:])
 	// fmt.Println(arr)
 
 }
