@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // import "fmt"
 
 func main() {
@@ -10,9 +12,9 @@ func main() {
 	InsertElement(arr[:], 8)
 	InsertElement(arr[:], 9)
 	InsertElement(arr[:], 9)
-	InsertElement(arr[:], 9)
 
-	SearchElement(arr[:], 9)
+	UpdateElement(arr[:], 8, 6)
+	fmt.Println(arr)
 	
 
 }

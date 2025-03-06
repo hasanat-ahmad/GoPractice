@@ -26,12 +26,27 @@ func DeleteElement(arr []int, number int) {
 func SearchElement(arr []int, number int) {
 	found := false
 	for i := 0; i < len(arr); i++ {
-		if (arr[i] == number){
+		if arr[i] == number {
 			fmt.Println(number, "found at index", i)
 			found = true
 		}
 	}
-	if (!found){
+	if !found {
 		fmt.Println(number, "not found")
+	}
+}
+
+func UpdateElement(arr []int, number int, index int) {
+	updated := false
+
+	for i := 0; i < len(arr); i++ {
+		if (i == index){
+			arr[i] = number
+			updated = true
+			fmt.Println(number, "updated at index", i)
+		}
+	}
+	if !updated{
+		fmt.Println("Number not updated")
 	}
 }
