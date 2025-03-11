@@ -40,13 +40,13 @@ func UpdateElement(arr []int, number int, index int) {
 	updated := false
 
 	for i := 0; i < len(arr); i++ {
-		if (i == index){
+		if i == index {
 			arr[i] = number
 			updated = true
 			fmt.Println(number, "updated at index", i)
 		}
 	}
-	if !updated{
+	if !updated {
 		fmt.Println("Number not updated")
 	}
 }
