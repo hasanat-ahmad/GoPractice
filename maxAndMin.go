@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+
 func FindingMaxInArray(arr []int) int {
 	
 	var max int = arr[0]
